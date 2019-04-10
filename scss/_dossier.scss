@@ -1,0 +1,63 @@
+.dossier{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    
+    &__picture{
+        position: relative;
+        display: flex;
+        align-content: flex-start;
+    }
+
+    &__btn{
+        display: inline-block;
+        margin-right: 55px;
+        font-size: 20px;
+        color: $color-yellow;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__photo{
+        
+        border: 1px solid $color-yellow;
+    }
+
+    &__corner{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        
+        &--top-lef{
+            top: -15px;
+            left: -15px;
+            border-top: 1px solid $color-yellow;
+            border-left: 1px solid $color-yellow;
+        }
+
+        &--top-right{
+            top: -15px;
+            right: -15px;
+            border-top: 1px solid $color-yellow;
+            border-right: 1px solid $color-yellow;
+        }
+
+        &--bottom-left{
+            bottom: -15px;
+            left: -15px;
+            border-bottom: 1px solid $color-yellow;
+            border-left: 1px solid $color-yellow;
+        }
+
+        &--bottom-right{
+            right: -15px;
+            bottom: -15px;
+            border-bottom: 1px solid $color-yellow;
+            border-right: 1px solid $color-yellow; 
+        }
+    }
+}

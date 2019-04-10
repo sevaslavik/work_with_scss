@@ -46,3 +46,62 @@ body {
       width: 210px;
       height: 1px;
       background-color: #ffcc00; }
+
+.dossier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch; }
+  .dossier__picture {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: start;
+    align-content: flex-start; }
+  .dossier__btn {
+    display: inline-block;
+    margin-right: 55px;
+    font-size: 20px;
+    color: #ffcc00;
+    background-color: transparent;
+    border: none; }
+  .dossier__photo {
+    border: 1px solid #ffcc00; }
+  .dossier__corner {
+    position: absolute;
+    width: 100px;
+    height: 100px; }
+    .dossier__corner--top-lef {
+      top: -15px;
+      left: -15px;
+      border-top: 1px solid #ffcc00;
+      border-left: 1px solid #ffcc00; }
+    .dossier__corner--top-right {
+      top: -15px;
+      right: -15px;
+      border-top: 1px solid #ffcc00;
+      border-right: 1px solid #ffcc00; }
+    .dossier__corner--bottom-left {
+      bottom: -15px;
+      left: -15px;
+      border-bottom: 1px solid #ffcc00;
+      border-left: 1px solid #ffcc00; }
+    .dossier__corner--bottom-right {
+      right: -15px;
+      bottom: -15px;
+      border-bottom: 1px solid #ffcc00;
+      border-right: 1px solid #ffcc00; }
