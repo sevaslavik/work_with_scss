@@ -6,6 +6,7 @@
 	justify-content: center;
 	align-items: center;
     align-content: stretch;
+    padding-top: 45px;
     
     &__picture{
         position: relative;
@@ -15,11 +16,15 @@
 
     &__btn{
         display: inline-block;
-        margin-right: 55px;
+        margin-right: 54px;
         font-size: 20px;
         color: $color-yellow;
         background-color: transparent;
         border: none;
+
+        &--right{
+            margin-left: 10px;
+        }
     }
 
     &__photo{
@@ -59,5 +64,99 @@
             border-bottom: 1px solid $color-yellow;
             border-right: 1px solid $color-yellow; 
         }
+    }
+
+    &__separator{
+        display: inline-block;
+        margin-left: 40px;
+        width: 5px;
+        height: 560px;
+        background-color: $color-yellow;
+    }
+
+    &__info{
+        display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: space-between;
+	    align-items: center;
+        align-content: stretch;
+        
+        padding-left: 15px;
+        
+    }
+ 
+
+    &__name{
+        font-family: $font-open-sans;
+        font-size: 36px;
+        color: $color-black;
+    }
+
+    &__line{
+        width: 100px;
+        height: 1px;
+        margin-top: 35px;
+        background-color: $color-yellow;
+    }
+
+    &__profession{
+        display: block;
+        padding-top: 35px;
+        font-family: $font-robbot;
+        font-size: 24px;
+    }
+
+    &__socialnetworks{
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: space-between;
+	    align-items: center;
+        align-content: stretch;
+        padding-top: 35px;
+    }
+
+    &__acounts{
+        padding-left: 5px;
+        list-style: none;
+    }
+
+    &__about{
+        padding-top: 30px;
+        text-align: center;
+        font-family: $font-robbot;
+        line-height: 25px;
+    }
+
+    &__dashed{
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: space-between;
+	    align-items: center;
+        align-content: stretch;
+        padding-top: 10px;
+    }
+
+    &__lines{
+        width: 10px;
+        height: 4px;
+        margin-left: 5px;
+        background-color: $color-yellow;
+
+        &--long{
+            width: 20px;
+        }
+    }
+
+    &__profile{
+        margin-top: 10px;
+        padding: 5px 10px;
+        font-family: $font-robbot;
+        font-weight: 700;
+        color: $color-black;
+        background-color: transparent;
+        border-color: $color-yellow;
     }
 }
