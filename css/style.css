@@ -208,3 +208,34 @@ body {
     color: #333;
     background-color: transparent;
     border-color: #ffcc00; }
+
+.circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding-top: 40px; }
+  .circles__point {
+    width: 10px;
+    height: 10px;
+    margin-left: 9px;
+    background-color: #ffcc00;
+    border-radius: 50%; }
+    .circles__point--empty {
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      border: 1px solid #ffcc00; }
